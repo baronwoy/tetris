@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Tetris": {
+      "commandName": "Project",
+      "workingDirectory": "C:\\Users\\baron\\source\\repos\\Tetris\\Tetris\\bin\\Debug\\net8.0-windows"
+    }
+  }
+}
