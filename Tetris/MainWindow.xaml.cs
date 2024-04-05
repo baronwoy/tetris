@@ -136,7 +136,7 @@ namespace Tetris
             DrawBlock(gameState.CurrentBlock);
             DrawNextBlock(gameState.BlockQueue);
             DrawHeldBlock(gameState.HeldBlock);
-            ScoreText.Text = $"Score: {gameState.Score}";
+            ScoreText.Text = $"Lines Cleared: {gameState.Score}";
         }
 
         private async Task GameLoop()
@@ -152,7 +152,7 @@ namespace Tetris
             }
 
             GameOverMenu.Visibility = Visibility.Visible;
-            FinalScoreText.Text = $"Score: {gameState.Score}";
+            FinalScoreText.Text = $"Lines Cleared: {gameState.Score}";
         }
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
