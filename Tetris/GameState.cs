@@ -18,12 +18,23 @@ namespace Tetris
             {
                 currentBlock = value;
                 currentBlock.Reset();
+
+                for (int i = 0; i < 2; i++)
+                {
+                    currentBlock.Move(1, 0); 
+
+                    if (!BlockFits())
+                    {
+                        currentBlock.Move(-1,0);
+                    }
+                }
             }
         }
 
         public GameGrid GameGrid { get;}
         public BlockQueue BlockQueue { get;}
         public bool GameOver { get; private set;  }
+        public int Score {  get; private set; }
 
         public GameState()
         {
@@ -98,7 +109,7 @@ namespace Tetris
                 GameGrid[p.Row, p.Column] = CurrentBlock.Id;
             }
 
-            GameGrid.clearFullRows();
+            Score += GameGrid.clearFullRows();
 
             if (IsGameOVer())
             {
