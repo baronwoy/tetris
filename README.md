@@ -32,6 +32,7 @@ git clone https://github.com/baronwoy/tetris.git
 
 ### Roadmap
 * Plan to implement a pause menu
+* Plan to implement Success screen if a user manages to reach 40 lines cleared
 * Plan to improve rotation and movement of block
 * Plan to have more blocks presented in the 'Next' window
 * Plan to display an animation for the line clear
