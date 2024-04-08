@@ -26,9 +26,12 @@
             <ImageBrush ImageSource="Assets/Background.png"/>
         </Grid.Background>
 
-        <Border Grid.Row="1" Grid.Column="1">
-        <Viewbox 
-                 Margin="0,0,0,20">
+        <Border Grid.Row="1"
+                Grid.Column="1" BorderThickness="4"
+                BorderBrush="AntiqueWhite"
+                CornerRadius="4"
+                Margin="0,0,0,20">
+        <Viewbox>
             <Canvas x:Name="GameCanvas"
                 Background="#101010"
                 Width="250"
@@ -39,27 +42,46 @@
         </Viewbox>
         </Border>
 
+        <Border Grid.Row="0"
+                Grid.Column="1"
+                Background="#101010"
+                BorderThickness="4"
+                BorderBrush="AntiqueWhite"
+                CornerRadius="4"
+                Margin="5">
         <TextBlock x:Name="ScoreText"
-                   Grid.Row="0"
-                   Grid.Column="1"
                    Text="Lines Cleared: "
                    Margin="0, 10"
                    TextAlignment="Center"/>
-        <StackPanel Grid.Row="1"
-                    Grid.Column="0"
-                    VerticalAlignment="Center"
-                    HorizontalAlignment="Right">
+        </Border>
+
+        <Border Grid.Row="1"
+                Grid.Column="0"
+                BorderThickness="4"
+                BorderBrush="AntiqueWhite"
+                CornerRadius="4"
+                Margin="10"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Right">
+        <StackPanel Background="#101010">
             <TextBlock Text="Hold"
                        TextAlignment="Center"/>
             <Image x:Name="HoldImage"
                    Margin="20"
                    Width="125"/>
         </StackPanel>
+        </Border>
 
-        <StackPanel Grid.Row="1"
-                    Grid.Column="2"
-                    VerticalAlignment="Center"
-                    HorizontalAlignment="Left">
+        <Border Grid.Row="1"
+                Grid.Column="2"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Left"
+                Margin="10"
+                BorderThickness="4"
+                BorderBrush="AntiqueWhite"
+                CornerRadius="4"
+                    >
+        <StackPanel Background="#101010">
             <TextBlock Text="Next"
                        TextAlignment="Center"/>
 
@@ -68,6 +90,7 @@
                    Width="125"/>
 
         </StackPanel>
+        </Border>
 
         <Grid x:Name="GameOverMenu"
               Background="#CC000000"
