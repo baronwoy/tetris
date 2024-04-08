@@ -3,6 +3,10 @@
 ### Project Aim
 A WPF application that recreates the famed game 'Tetris' using 2d arrays, with simple progressive difficulty, aim to get 40 lines cleared!
 
+#### Current State:
+<img src="https://github.com/baronwoy/tetris/assets/157763277/3fa5caea-b1ef-4422-8ec0-44c570c6c430" height="auto" width="auto">
+
+
 ### Controls
 * Left and Right arrow keys to move left and right
 * Down arrow key to descend faster
