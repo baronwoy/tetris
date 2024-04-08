@@ -26,9 +26,10 @@
             <ImageBrush ImageSource="Assets/Background.png"/>
         </Grid.Background>
 
-        <Viewbox Grid.Row="1" Grid.Column="1"
+        <Border Grid.Row="1" Grid.Column="1">
+        <Viewbox 
                  Margin="0,0,0,20">
-        <Canvas x:Name="GameCanvas"
+            <Canvas x:Name="GameCanvas"
                 Background="#101010"
                 Width="250"
                 Height="510"
@@ -36,6 +37,7 @@
                 Loaded="GameCanvas_Loaded"
                 />
         </Viewbox>
+        </Border>
 
         <TextBlock x:Name="ScoreText"
                    Grid.Row="0"
