@@ -29,6 +29,8 @@ git clone https://github.com/baronwoy/tetris.git
 * Rotation near the edges of either wall can be restrictive at times
 * Moving a block right before its place/when there are blocks at the top is restrictive/diffcuit
 * Diffculty might ramp up too quickly
+* Moving block feels rigid
+* Moving blocks when the blocks fall fast can be difficult
 
 ### Roadmap
 * Plan to implement a pause menu
